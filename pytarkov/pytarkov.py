@@ -39,70 +39,70 @@ class PyTarkov:
 
 class Item:
     def __init__(self, data):
-        self.data = data
+        self.data = data[0]
 
     def uid(self):
-        return self.data[0]["uid"]
+        return self.data["uid"]
 
     def name(self):
-        return self.data[0]["name"]
+        return self.data["name"]
 
     def short_name(self):
-        return self.data[0]["shortName"]
+        return self.data["shortName"]
 
     def price(self):
-        return self.data[0]["price"]
+        return self.data["price"]
 
     def base_price(self):
-        return self.data[0]["basePrice"]
+        return self.data["basePrice"]
 
     def avg_24h_price(self):
-        return self.data[0]["avg24hPrice"]
+        return self.data["avg24hPrice"]
 
     def avg_7d_price(self):
-        return self.data[0]["avg7daysPrice"]
+        return self.data["avg7daysPrice"]
 
     def trader_name(self):
-        return self.data[0]["traderName"]
+        return self.data["traderName"]
 
     def trader_price(self):
-        return self.data[0]["traderPrice"]
+        return self.data["traderPrice"]
 
     def trader_price_currency(self):
-        return self.data[0]["traderPriceCur"]
+        return self.data["traderPriceCur"]
 
     def updated(self):
-        return self.data[0]["updated"]
+        return self.data["updated"]
 
     def slots(self):
-        return self.data[0]["slots"]
+        return self.data["slots"]
 
     def diff_24h(self):
-        return self.data[0]["diff24h"]
+        return self.data["diff24h"]
 
     def diff_7d(self):
-        return self.data[0]["diff7days"]
+        return self.data["diff7days"]
 
     def icon(self):
-        return self.data[0]["icon"]
+        return self.data["icon"]
 
     def link(self):
-        return self.data[0]["link"]
+        return self.data["link"]
 
     def wiki_link(self):
-        return self.data[0]["wikiLink"]
+        return self.data["wikiLink"]
 
     def img(self):
-        return self.data[0]["img"]
+        return self.data["img"]
 
     def img_big(self):
-        return self.data[0]["imgBig"]
+        return self.data["imgBig"]
 
     def bsg_id(self):
-        return self.data[0]["bsgId"]
+        return self.data["bsgId"]
 
     def is_functional(self):
-        return self.data[0]["isFunctional"]
+        return self.data["isFunctional"]
 
     def reference(self):
-        return self.data[0]["reference"]
+        return self.data["reference"]
