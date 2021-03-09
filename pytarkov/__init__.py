@@ -1,1 +1,1 @@
-# __init__.py
+from .pytarkov import PyTarkov
