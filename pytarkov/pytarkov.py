@@ -39,70 +39,26 @@ class PyTarkov:
 
 class Item:
     def __init__(self, data):
-        self.data = data[0]
-
-    def uid(self):
-        return self.data["uid"]
-
-    def name(self):
-        return self.data["name"]
-
-    def short_name(self):
-        return self.data["shortName"]
-
-    def price(self):
-        return self.data["price"]
-
-    def base_price(self):
-        return self.data["basePrice"]
-
-    def avg_24h_price(self):
-        return self.data["avg24hPrice"]
-
-    def avg_7d_price(self):
-        return self.data["avg7daysPrice"]
-
-    def trader_name(self):
-        return self.data["traderName"]
-
-    def trader_price(self):
-        return self.data["traderPrice"]
-
-    def trader_price_currency(self):
-        return self.data["traderPriceCur"]
-
-    def updated(self):
-        return self.data["updated"]
-
-    def slots(self):
-        return self.data["slots"]
-
-    def diff_24h(self):
-        return self.data["diff24h"]
-
-    def diff_7d(self):
-        return self.data["diff7days"]
-
-    def icon(self):
-        return self.data["icon"]
-
-    def link(self):
-        return self.data["link"]
-
-    def wiki_link(self):
-        return self.data["wikiLink"]
-
-    def img(self):
-        return self.data["img"]
-
-    def img_big(self):
-        return self.data["imgBig"]
-
-    def bsg_id(self):
-        return self.data["bsgId"]
-
-    def is_functional(self):
-        return self.data["isFunctional"]
-
-    def reference(self):
-        return self.data["reference"]
+        self.__data = data[0]
+        self.uid = data["uid"]
+        self.name = data["name"]
+        self.short_name = data["shortName"]
+        self.price = data["price"]
+        self.base_price = data["basePrice"]
+        self.avg_24h_price = data["avg24hPrice"]
+        self.avg_7d_price = data["avg7daysPrice"]
+        self.trader_name = data["traderName"]
+        self.trader_price = data["traderPrice"]
+        self.trader_price_currency = data["traderPriceCur"]
+        self.updated = data["updated"]
+        self.slots = data["slots"]
+        self.diff_24h = data["diff24h"]
+        self.diff_7d = data["diff7days"]
+        self.icon = data["icon"]
+        self.link = data["link"]
+        self.wiki_link = data["wikiLink"]
+        self.img = data["img"]
+        self.img_big = data["imgBig"]
+        self.bsg_id = data["bsgId"]
+        self.is_functional = data["isFunctional"]
+        self.reference = data["reference"]
