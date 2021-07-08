@@ -34,4 +34,4 @@ Quick Example
 
     client = pytarkov.PyTarkov("api-key-here")
     item = client.get_item_by_name("bitcoin")
-    print(f"{item.name()} price: {item.price()}")
+    print(f"{item.name} price: {item.price}")
